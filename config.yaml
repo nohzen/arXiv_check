@@ -1,0 +1,56 @@
+topics:
+    "Defocus":
+        keywords: ["defocus", "depth-of-field", "bokeh", "depth of field"]
+        categories: ["cs.CV", "eess.IV"]
+        only_with_url: false
+    "Stereo Matching":
+        keywords: ["stereo", "disparity"]
+        categories: ["cs.CV", "cs.RO"]
+        only_with_url: true
+    "Monocular Depth Estimation":
+        keywords: ["monocular depth", "depth estimation"]
+        categories: ["cs.CV"]
+        only_with_url: true
+    "Optical flow":
+        keywords: ["optical flow"]
+        categories: ["cs.CV"]
+        only_with_url: true
+    "Object Tracking":
+        keywords: ["object tracking", "point tracking"]
+        categories: ["cs.CV"]
+        only_with_url: true
+    "NeRF":
+        keywords: ["NeRF"]
+        categories: ["cs.CV"]
+        only_with_url: true
+    "Gaussian Splatting":
+        keywords: ["Gaussian Splatting"]
+        categories: ["cs.CV"]
+        only_with_url: true
+
+
+
+    # "SLAM":
+    #     keywords: ["SLAM", "Visual Odometry"]
+    #     categories: ["cs.CV", "cs.RO"]
+    #     only_with_url: true
+    # "SFM":
+    #     keywords: ["SFM", "Structure from Motion"]
+    #     categories: ["cs.CV"]
+    #     only_with_url: true
+
+    # "Visual Localization":
+    #     keywords: ["Visual Localization","Camera Localization",
+    #               "Camera Re-localisation","Loop Closure Detection",
+    #               "visual place recognition","image retrieval"]
+    #     categories: ["cs.CV"]
+    #     only_with_url: true
+    # "Keypoint Detection":
+    #     keywords: ["Keypoint Detection", "Feature Descriptor"]
+    #     categories: ["cs.CV"]
+    #     only_with_url: true
+    # "Image Matching":
+    #     keywords: ["Image Matching", "Keypoint Matching",
+    #               "Line Segment Detection", "Local Feature Matching"]
+    #     categories: ["cs.CV"]
+    #     only_with_url: true
