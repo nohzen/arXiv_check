@@ -40,7 +40,7 @@ def query_topic(topic, args, date_from):
 
     search = arxiv.Search(
         query = query,
-        max_results = 20,
+        max_results = 30,
         sort_by = arxiv.SortCriterion.LastUpdatedDate
         # LastUpdatedDate or SubmittedDate
     )
