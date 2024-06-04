@@ -21,11 +21,11 @@ topics:
         only_with_url: true
     "NeRF":
         keywords: ["NeRF"]
-        categories: ["cs.CV"]
+        categories: ["cs.CV", "cs.GR"]
         only_with_url: true
     "Gaussian Splatting":
         keywords: ["Gaussian Splatting"]
-        categories: ["cs.CV"]
+        categories: ["cs.CV", "cs.GR"]
         only_with_url: true
 
 
