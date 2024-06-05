@@ -1,3 +1,5 @@
-.venv
 lastUpdateDate.yaml
 output.md
+.venv
+.envrc
+.env
