@@ -11,6 +11,21 @@ topics:
         keywords: ["monocular depth", "depth estimation"]
         categories: ["cs.CV"]
         only_with_url: true
+    "Keypoint Detection":
+        keywords: ["Keypoint Detection", "Feature Descriptor"]
+        categories: ["cs.CV"]
+        only_with_url: true
+    "Image Matching":
+        keywords: ["Image Matching", "Keypoint Matching", "Line Segment Detection", "Local Feature Matching"]
+        categories: ["cs.CV"]
+        only_with_url: true
+    "Visual Localization":
+        keywords: ["Visual Localization", "Camera Localization",
+                    "Visual Re-localization", "Camera Re-localisation",
+                    "Loop Closure Detection", "visual place recognition", "image retrieval",
+                    "Camera pose"]
+        categories: ["cs.CV"]
+        only_with_url: true
     "Optical flow":
         keywords: ["optical flow"]
         categories: ["cs.CV"]
@@ -28,8 +43,6 @@ topics:
         categories: ["cs.CV", "cs.GR"]
         only_with_url: true
 
-
-
     # "SLAM":
     #     keywords: ["SLAM", "Visual Odometry"]
     #     categories: ["cs.CV", "cs.RO"]
@@ -39,18 +52,3 @@ topics:
     #     categories: ["cs.CV"]
     #     only_with_url: true
 
-    # "Visual Localization":
-    #     keywords: ["Visual Localization","Camera Localization",
-    #               "Camera Re-localisation","Loop Closure Detection",
-    #               "visual place recognition","image retrieval"]
-    #     categories: ["cs.CV"]
-    #     only_with_url: true
-    # "Keypoint Detection":
-    #     keywords: ["Keypoint Detection", "Feature Descriptor"]
-    #     categories: ["cs.CV"]
-    #     only_with_url: true
-    # "Image Matching":
-    #     keywords: ["Image Matching", "Keypoint Matching",
-    #               "Line Segment Detection", "Local Feature Matching"]
-    #     categories: ["cs.CV"]
-    #     only_with_url: true
