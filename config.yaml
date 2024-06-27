@@ -11,6 +11,14 @@ topics:
         keywords: ["monocular depth", "depth estimation"]
         categories: ["cs.CV"]
         only_with_url: true
+    "SLAM":
+        keywords: ["SLAM", "Visual Odometry"]
+        categories: ["cs.CV", "cs.RO"]
+        only_with_url: true
+    "SFM":
+        keywords: ["SFM", "Structure from Motion"]
+        categories: ["cs.CV"]
+        only_with_url: true
     "Keypoint Detection":
         keywords: ["Keypoint Detection", "Feature Descriptor"]
         categories: ["cs.CV"]
@@ -42,13 +50,3 @@ topics:
         keywords: ["Gaussian Splatting"]
         categories: ["cs.CV", "cs.GR"]
         only_with_url: true
-
-    # "SLAM":
-    #     keywords: ["SLAM", "Visual Odometry"]
-    #     categories: ["cs.CV", "cs.RO"]
-    #     only_with_url: true
-    # "SFM":
-    #     keywords: ["SFM", "Structure from Motion"]
-    #     categories: ["cs.CV"]
-    #     only_with_url: true
-
