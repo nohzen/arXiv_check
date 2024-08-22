@@ -43,10 +43,10 @@ topics:
         categories: ["cs.CV"]
         only_with_url: true
     "NeRF":
-        keywords: ["NeRF"]
+        keywords: ["NeRF", "Neural rendering", "neural radiance field"]
         categories: ["cs.CV", "cs.GR"]
         only_with_url: true
     "Gaussian Splatting":
-        keywords: ["Gaussian Splatting"]
+        keywords: ["novel view synthesis", "Gaussian Splat", "Surface reconstruction", "Mesh reconstruction"]
         categories: ["cs.CV", "cs.GR"]
         only_with_url: true
