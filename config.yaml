@@ -1,4 +1,8 @@
 topics:
+    "Calibration":
+        keywords: ["calibration"]
+        categories: ["cs.CV", "eess.IV"]
+        only_with_url: true
     "Defocus":
         keywords: ["defocus", "depth-of-field", "bokeh", "depth of field"]
         categories: ["cs.CV", "eess.IV"]
@@ -44,9 +48,9 @@ topics:
         only_with_url: true
     "NeRF":
         keywords: ["NeRF", "Neural rendering", "neural radiance field"]
-        categories: ["cs.CV", "cs.GR"]
+        categories: ["cs.CV", "cs.GR", "cs.RO"]
         only_with_url: true
     "Gaussian Splatting":
         keywords: ["novel view synthesis", "Gaussian Splat", "Surface reconstruction", "Mesh reconstruction"]
-        categories: ["cs.CV", "cs.GR"]
+        categories: ["cs.CV", "cs.GR", "cs.RO"]
         only_with_url: true
