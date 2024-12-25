@@ -6,7 +6,7 @@ import urlextract
 import arxiv
 
 
-def query_topic(topic, args, date_from):
+def query_topic(topic, args, date_from, paper_id_set):
     keywords = args["keywords"]
     categories = args["categories"]
     only_with_url = args["only_with_url"]
@@ -40,7 +40,7 @@ def query_topic(topic, args, date_from):
 
     search = arxiv.Search(
         query = query,
-        max_results = 50,
+        max_results = 100,
         sort_by = arxiv.SortCriterion.LastUpdatedDate
         # LastUpdatedDate or SubmittedDate
     )
@@ -53,8 +53,13 @@ def query_topic(topic, args, date_from):
     lastUpdateDate = date_from
 
     for result in results:
-        print(result)
         # result.entry_id, result.title, result.published, result.updated, result.authors, result.summary, result.categories, result.comment
+        paper_id = result.get_short_id()
+        if paper_id in paper_id_set:
+            print(paper_id, " is already exists.")
+            continue
+        paper_id_set.add(paper_id)
+        print(result)
 
         urls = set()
         # Get URL from abst
@@ -68,7 +73,6 @@ def query_topic(topic, args, date_from):
             urls.update(set(extractor.find_urls(comment)))
         # Get URL from paperwithcode
         paperwithcode_url = "https://arxiv.paperswithcode.com/api/v0/papers/"
-        paper_id = result.get_short_id()
         code_url = paperwithcode_url + paper_id
         r = requests.get(code_url).json()
         if "official" in r and r["official"]:
@@ -120,10 +124,11 @@ if __name__ == "__main__":
         print("There are no datetime file!:", date_file)
         date_from = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=4)
 
+    paper_id_set = set()
     lastUpdateDate = date_from
     for topic, args in config["topics"].items():
         print(topic)
-        topicLastUpdateDate = query_topic(topic, args, date_from)
+        topicLastUpdateDate = query_topic(topic, args, date_from, paper_id_set)
         lastUpdateDate = lastUpdateDate if lastUpdateDate > topicLastUpdateDate else topicLastUpdateDate
         print("\n")
 
